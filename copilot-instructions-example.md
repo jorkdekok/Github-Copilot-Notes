@@ -17,3 +17,8 @@ Create tests so that all lines of code are covered.
 If possible use [Theory] to test extensively and cover all lines of code. Also test the exceptions if any.
 
 Also use the Builder pattern to create objects in the arrange section of the unit tests.
+
+# Code style
+Use the following code style:
+- Use the Microsoft naming convention.
+- Use record structs for DTOs.
