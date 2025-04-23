@@ -2,14 +2,19 @@
 Create unit tests using xunit and moq.
  
 If you create mock services or variables, put Mock at the end like so:
+```csharp
 private readonly Mock<IProjectsClient> _projectsClientMock = new();
 var apiResponseMock = new Mock<IApiResponse>();
+```
  
 The name of your test should consist of three parts:
 - The name of the method being tested.
 - The scenario under which it's being tested.
 - The expected behavior when the scenario is invoked.
-Something like: <method name>_<scenario>_<expected behavior>
+Something like: 
+```
+<method name>_<scenario>_<expected behavior>
+```
  
 Also use .Verify to test how many times an injected service or client is called.
  
