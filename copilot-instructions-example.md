@@ -17,6 +17,19 @@ Something like:
 ```
  
 Also use .Verify to test how many times an injected service or client is called.
+
+\_loggerMock should be verified like this:
+```csharp
+_loggerMock.Logger
+	.Verify(x => x.Log(
+		It.IsAny<LogLevel>(),
+		It.IsAny<EventId>(),
+		It.IsAny<It.IsAnyType>(),
+		It.IsAny<Exception>(),
+		It.IsAny<Func<It.IsAnyType, Exception, string>>()),
+	Times.Once);
+```
+
  
 Create tests so that all lines of code are covered.
 If possible use [Theory] to test extensively and cover all lines of code. Also test the exceptions if any.
