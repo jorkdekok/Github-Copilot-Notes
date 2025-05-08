@@ -27,30 +27,26 @@ Please also create a new HrmDateService to handle the business logic for upserti
 Let me know if there are any improvements or optimizations I can make to this approach."
 
 ## Prompt 3
-
-Here’s an improved version of your prompt:
----
 Task: Create a new HrmDate record based on the structure of HrmEmployeeContract. Implement corresponding functions and services for HrmDate in both the Bouw and Infra folders, following the patterns of HrmEmployeeContractFunction. Ensure the following:
 1.	Record Definition:
-•	The HrmDate record should include properties for Date, Description, and Type.
-•	Add appropriate JSON property annotations and ensure it is marked as [ExcludeFromCodeCoverage].
+-	The HrmDate record should include properties for Date, Description, and Type.
+-	Add appropriate JSON property annotations and ensure it is marked as [ExcludeFromCodeCoverage].
 2.	Functions:
-•	Create HrmDateFunction in both Bouw and Infra folders.
-•	Functions should handle Service Bus triggers and timer triggers, similar to HrmEmployeeContractFunction.
+-	Create HrmDateFunction in both Bouw and Infra folders.-
+-	Functions should handle Service Bus triggers and timer triggers, similar to HrmEmployeeContractFunction.
 3.	Service:
-•	Implement HrmDateService in the Services folder.
-•	The service should include an UpsertAsync method for handling HrmDate objects.
+- Implement HrmDateService in the Services folder.
+- The service should include an UpsertAsync method for handling HrmDate objects.
 4.	Testing:
-•	Add unit tests for the HrmDate functions and service.
-•	Ensure tests cover success and failure scenarios, as well as feature flag behavior for Infra.
+- Add unit tests for the HrmDate functions and service.
+- Ensure tests cover success and failure scenarios, as well as feature flag behavior for Infra.
 5.	Configuration:
-•	Update Program.cs to register the new HrmDate service and retry session-based service.
-•	Add any missing constants to FunctionsConstants.cs (e.g., Service Bus topics and subscription names).
+- Update Program.cs to register the new HrmDate service and retry session-based service.
+- Add any missing constants to FunctionsConstants.cs (e.g., Service Bus topics and subscription names).
 6.	Usings:
-•	Ensure all necessary namespaces are included in the new files.
+- Ensure all necessary namespaces are included in the new files.
 7.	Output:
-•	Provide a detailed implementation plan, including file paths, class definitions, and method signatures.
-•	Highlight any assumptions or additional considerations.
----
-This version provides more clarity and structure, making it easier to understand the task and deliver the expected results.
+- Provide a detailed implementation plan, including file paths, class definitions, and method signatures.
+- Highlight any assumptions or additional considerations.
+
 
