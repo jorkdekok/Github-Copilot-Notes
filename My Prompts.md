@@ -52,3 +52,6 @@ Task: Create a new HrmDate record based on the structure of HrmEmployeeContract.
 
 ## Prompt: Chain-of-Thought
 “Laten we dit stap voor stap oplossen.”
+
+## Prompt 4
+Add a builder class for HrmEmployeeContract in the test project, with fluent methods for each property and a Build() method. Place it in Tests/DuraVermeer.PlanningNL.Services.UnitTests/HrmEmployeeContract/Extensions/. Return a plan in JSON format.
