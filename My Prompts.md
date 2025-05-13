@@ -50,3 +50,5 @@ Task: Create a new HrmDate record based on the structure of HrmEmployeeContract.
 - Highlight any assumptions or additional considerations.
 
 
+## Prompt: Chain-of-Thought
+“Laten we dit stap voor stap oplossen.”
